@@ -1,0 +1,32 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="320" name="MobileOptimized"/>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>投资客户资费</title>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+		$(".div2").click(function(){ 
+			$(this).next("div").slideToggle("slow")  
+			.siblings(".div3:visible").slideUp("slow");
+		});
+	});
+</script>
+<link rel="stylesheet" href="../../css/help.css" />
+</head>
+<body class="bg">
+<div class="list">
+    <div class="div2">充值有费用吗？</div>
+        <div class="div3">目前不收取投资人充值费用。</div>
+        <p></p>
+    <div class="div2">提现有费用吗？</div>
+        <div class="div3">1.每月有3次免费提现机会，超过3次将按笔收费。<br>
+2.超过3次免费提现后，收费标准：2元/笔。<br>
+ </div>
+        <p></p>	
+  </div>
+</body>
+</html>

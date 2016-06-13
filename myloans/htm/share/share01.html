@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="320" name="MobileOptimized"/>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>分享页面</title>
+<link rel="stylesheet" href="../../css/baseStyle.css" />
+<link rel="stylesheet" href="../../css/share.css" />
+<script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+<script>
+window.onload = function(){
+    $(".jt_on").click(function(){
+       $(this).toggleClass("jt");
+      if($(this).hasClass("jt")){
+          $(".bt01").removeClass("bt01_un");
+      }
+      else{
+          $(".bt01").addClass("bt01_un");
+      }
+}
+    );
+}
+   
+</script>
+</head>
+<body>
+<!--<header> <a class="back" href="#">返回</a>
+  <h1>分享好友活动标题文字</h1>
+  <a class="share" href="#"></a> </header>-->
+<div class="info"><img src="../../images/share/info.jpg" alt=""/></div>
+<div class="yq_word">您的好友138****8978邀您加入小财迷一起赚钱</div>
+<div class="input_box">  
+  <form class="tab cf">
+  <label><span>手机号码</span><input type="text" value="请输入手机号码" onblur="if (this.value == '') {this.value = '请输入手机号码'; this.style.color = '#b3b3b3'}" onfocus="if (this.value == '请输入手机号码') {this.value = '';this.style.color = '#4d4d4d'}" ></label>
+  <p></p>
+  <label><span>推荐码</span><input type="text" value="HDIS39H" class="tx2"></label>
+  <p></p>
+  <label><span>图形验证</span><input type="text" class="tx1" value="请输入验证码"onblur="if (this.value == '') {this.value = '请输入验证码'; this.style.color = '#b3b3b3'}" onfocus="if (this.value == '请输入验证码') {this.value = '';this.style.color = '#4d4d4d'}" >
+    <img src="../../images/share/txm.gif"></label>
+  <p></p>
+  <label><span>短信验证</span><input type="text" class="tx1" value="请输入短信验证码"onblur="if (this.value == '') {this.value = '请输入短信验证码'; this.style.color = '#b3b3b3'}" onfocus="if (this.value == '请输入短信验证码') {this.value = '';this.style.color = '#4d4d4d'}" ><a href="#">获取验证码</a></label>
+  </form>
+  <div class="clear"></div>
+  <div class="tell">收不到短信？使用<a href="#">语音验证</a></div>
+  <div class="wd01 cf"><b class="jt_on jt"></b><p>我同意并接受<a href="#">《咨询与管理服务电子协议》</a></p></div>
+  <div class="bt01">立即注册</div>
+</div>
+</body>
+</html>

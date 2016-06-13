@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+.bg{ background:#de144f url(../images/zc580/banner.jpg) no-repeat; background-size: 100%;}
+.xj01{ padding: 0 4%; margin-top: 86%;}
+.xj01 img{ width:100%; float: left; margin-top: 1%;}
+.bt{ width: 50%; margin: 7% auto 0% auto;}
+.bt img{ width: 100%;}

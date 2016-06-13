@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="320" name="MobileOptimized"/>
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no" name="viewport"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>帮助中心</title>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+		$(".div2").click(function(){ 
+			$(this).next("div").slideToggle("slow")  
+			.siblings(".div3:visible").slideUp("slow");
+		});
+	});
+</script>
+<link rel="stylesheet" href="../../css/help.css" />
+</head>
+<body class="bg">
+<div class="list">
+    <div class="div2" onclick="document.location='list1.html';"><span>风控保障</span><img src="../../images/help/jt02.png"></div>
+    <p></p>
+    <div class="div2" onclick="document.location='list2.html';"><span>合法合规</span><img src="../../images/help/jt02.png"></div>
+        <p></p>
+    <div class="div2" onclick="document.location='list3.html';"><span>账户安全保障</span><img src="../../images/help/jt02.png"></div>
+        <p></p>
+    <div class="div2" onclick="document.location='list4.html';"><span>投资客户资费</span><img src="../../images/help/jt02.png"></div>
+        <p></p>
+    <div class="div2" onclick="document.location='list5.html';"><span>投资问题</span><img src="../../images/help/jt02.png"></div>
+        <p></p>
+    <div class="div2" onclick="document.location='list6.html';"><span>注册与登录</span><img src="../../images/help/jt02.png"></div>
+     <p></p>
+    <div class="div2" onclick="document.location='list7.html';"><span>充值与提现</span><img src="../../images/help/jt02.png"></div>
+     <p></p>
+    <div class="div2" onclick="document.location='list8.html';"><span>名词解释</span><img src="../../images/help/jt02.png"></div>
+     <p></p>   
+</div>
+
+</body>
+</html>

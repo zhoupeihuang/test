@@ -1,0 +1,79 @@
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit}
+ul,ol{list-style:none}
+a img{border:none}
+button{overflow:visible;outline:none;padding:0}
+button::-moz-focus-inner{padding:0}
+a,input,button,select,textarea{-webkit-tap-highlight-color:rgba(0,0,0,0);-webkit-focus-ring-color:rgba(0,0,0,0)}
+.stage{position:relative;left:0;top:0;overflow:hidden;width:100%; height: 100%; margin: 0 auto;}
+.stage .pages{position:relative;/*width: 640px;height: 3870px;*/ }
+.stage .pages.moving{-webkit-transition:all .3s cubic-bezier(.1,.46,.1,.92)}
+.stage .pages.topping{-webkit-transition:all .5s cubic-bezier(.1,.46,.1,.92)}
+.front{width:100%;background-color:#ed9c28;background-size:100% auto;-webkit-background-size:100% auto}
+.front .logo-open{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%)}
+.front .logo-open .logo-img{width:104px;height:105px;display:block;margin:0 auto 32px}
+.front .logo-open .logo-txt{width:173px;height:45px;display:block;margin:0 auto}
+.u-arrow { position: fixed; bottom: 20px; left:50%; z-index: 150; width: 80px; height:50px; margin-left: -40px; /*background: rgba(160,160,160,0.6); border-radius: 50%;*/ }
+.u-arrow p { position: absolute; top: 50%; left: 50%; margin: -14px 0 0 -25px; width: 50px; height: 28px;
+    -webkit-animation:downing 1.4s cubic-bezier(.55,.22,.72,.28) infinite
+}
+.css_sprite01 { background-image:url(../images/why/arrow.png);  background-repeat: no-repeat!important; }
+.trans_image_box {
+    width:100%;
+   /* height: 3870px;*/
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+@-webkit-keyframes downing{0%{opacity:0;-webkit-transform:translateY(20px)}
+    50%{opacity:1;-webkit-transform:translateY(0)}
+    100%{opacity:0;-webkit-transform:translateY(-20px)}}
+.stage .page{position:relative;width:100%;/*height:774px;-webkit-background-size:100% 774px;*/overflow: hidden;}
+.stage .page.moving{-webkit-transition:all .3s linear;z-index:2}
+.stage .front{height:100%;position:fixed;z-index:-1;left:0;top:0}
+.stage .page .content{color:rgba(255,255,255,.8);padding:0 20px;font-size:14px}
+.stage .page .content .tit{padding-top:18px;margin-bottom:4px}
+.stage .page .content .tit .ico-tit{height:31px;display:inline-block;vertical-align:bottom}
+
+.page .img{opacity:0; margin-top:-30px;}
+.page.on .img{opacity:1;-webkit-animation:show .8s linear}
+@-webkit-keyframes show{0%{opacity:0}
+    100%{opacity:1}}
+.page.on .img{-webkit-animation:flyIn1 .3s cubic-bezier(.1,.46,.1,.92);-webkit-transform:translateX(0)}
+
+@-webkit-keyframes flyIn1{0%{-webkit-transform:translateX(240px);opacity:0}
+    100%{-webkit-transform:translateX(0);opacity:1}}
+@-webkit-keyframes flyIn2{0%{-webkit-transform:translateX(240px);opacity:0}
+    25%{-webkit-transform:translateX(240px);opacity:0}
+    100%{-webkit-transform:translateX(0);opacity:1}}
+.page-1.on .img{-webkit-animation:a_w_1 .6s cubic-bezier(.1,.46,.1,.92)}
+
+@-webkit-keyframes a_w_1{0%{opacity:0;-webkit-transform:translateX(40px)}
+    50%{opacity:0;-webkit-transform:translateX(40px)}
+    100%{opacity:1;-webkit-transform:translateX(0)}}
+@-webkit-keyframes a_w_2{0%{opacity:0;-webkit-transform:translateX(40px)}
+    63%{opacity:0;-webkit-transform:translateX(40px)}
+    100%{opacity:1;-webkit-transform:translateX(0)}}
+@-webkit-keyframes a_w_3{0%{opacity:0;-webkit-transform:translateX(40px)}
+    60%{opacity:0;-webkit-transform:translateX(40px)}
+    100%{opacity:1;-webkit-transform:translateX(0)}}
+.page-2.on .img{-webkit-animation:num1 .5s cubic-bezier(.1,.46,.1,.92)}
+
+@-webkit-keyframes num1{0%{-webkit-transform:translateY(40px);opacity:0}
+    40%{-webkit-transform:translateY(40px);opacity:0}
+    100%{-webkit-transform:translateY(0);opacity:1}}
+
+.page-3.on .img{-webkit-animation:num1 .5s cubic-bezier(.1,.46,.1,.92)}
+
+.page-4.on .img{-webkit-animation:num1 .5s cubic-bezier(.1,.46,.1,.92)}
+
+.header .op-logo{display:block;width:119px;height:21px;margin:0 auto;background-image:url("../x.jpg");background-position:0 -121px;position:relative;top:9px}
+.page-5 .img{text-decoration:none;color:#000}
+/*#page-1{background-image: url(01.jpg);}
+#page-2{background-image: url(02.jpg);}
+#page-3{background-image: url(03.jpg);}
+#page-4{background-image: url(04.jpg);}
+#page-5{background-image: url(05.jpg);}*/
+
+.word{font-size:35px;color:#c92424;position:absolute;top:50%;}
+

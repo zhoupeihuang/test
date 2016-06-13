@@ -1,0 +1,54 @@
+@charset "utf-8";
+/* CSS Document */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{margin:0; padding:0;font-family:"Microsoft Yahei";}
+fieldset,img{ border:0;}
+adderss,caption,cite,code,dfn,em,th,var{ font-style:normal; font-weight:normal;}
+ol,ul{ list-style:none;}
+a{text-decoration:none;color:#1a1a1a}a:hover,a:active,a:focus{text-decoration:none;}a:active{color:#aaa;}
+
+/*======头部=======*/
+.clear{height:0; line-height:0; font-size:0; clear:both;}
+.bg{ background:#f0f0f0;}
+.pd_box{ background:#fff; border-bottom:1px solid #d1d1d1; padding:9px 20px;color:#808080; }
+.pd_box h2{ color:#FD5903; text-align:center; font-size:12px; font-weight:normal; line-height:18px;}
+.pd_box .left{ width:42%; padding-right:8%; float:left; text-align:center; border-right:1px solid #d4d4d4; margin-top:20px;}
+.pd_box .left p{ display:block; text-align:center; font-size:35px; line-height:35px; color:#FD5903; }
+.pd_box .left p span{ font-size:22px; line-height:22px; margin-left:4px;}
+.pd_box .left b{font-size:12px; line-height:12px; font-weight:normal; display:block; margin-top:9px;}
+.pd_box .right{ width:31%; float:right; padding-left:18%;margin-top:20px;}
+.pd_box .right p{ width:100%; text-align:left; display:block; float:left;}
+.pd_box .right p em{ font-style:normal;line-height:22px;font-size:22px;  margin-top:13px; float:left;}
+.pd_box .right p span{ font-size:18px;float:left; margin-top:11px; margin-left:4px;}
+.pd_box .right b{font-size:12px; line-height:12px;  font-weight:normal; display:block; margin-top:9px;float:left;}
+.pd_box h3{ width:100%; border-bottom:1px solid #d4d4d4; float:left; font-size:12px; line-height:35px; font-weight:normal; margin-top:14px;}
+.pd_box h3 p{ float:left;width:50%;}
+.pd_box h3 span{ color:#FD5903; margin-left:8px;}
+.pd_box h3 b{ float:right;width:50%; text-align:right; font-weight:normal;}
+.pd_box .info{ font-size:12px; line-height:21px; margin-top:7px; width:100%; float:left;}
+.pd_buy{position:fixed;bottom:0; width:100%;z-index:inherit; background:#eeeeee; height:69px;color:#808080; }
+.pd_buy p{ font-size:25px; line-height:25px; height:25px; font-size:12px; text-align:right; padding-right:20px;}
+.pd_buy p span{ color:#FD5903;}
+.pd_buy .buy{ background:#FD5903;padding:4px; height:36px;}
+.pd_buy .buy .left{ width:67%; height:19px; line-height:19px; font-size:18px; float:left; background:#fff; padding:9px 0;}
+.pd_buy .buy .left .jh01{ width:19px; height:19px; border-right:1px solid #CCCCCC; padding-right:10px;background: url(../images/product/icon01.png) no-repeat 0px 9px; background-size:19px; float:left; margin-left:10px;}
+.pd_buy .buy .left .jh02{ width:19px; height:19px;  border-left:1px solid #CCCCCC; padding-left:10px;background:url(../images/product/icon02.png) no-repeat 10px 0; background-size:19px; float:right; margin-right:10px; margin-left:12px;}
+.pd_buy .buy .left .jh01_1{ width:19px; height:19px; border-right:1px solid #CCCCCC; padding-right:10px;background: url(../images/product/icon01_1.png) no-repeat 0px 9px; background-size:19px; float:left; margin-left:10px;}
+.pd_buy .buy .left .jh02_1{ width:19px; height:19px;  border-left:1px solid #CCCCCC; padding-left:10px;background:url(../images/product/icon02_1.png) no-repeat 10px 0; background-size:19px; float:right; margin-right:10px; margin-left:12px;}
+.pd_buy .buy .left span{ width:33%; float:left; margin-left:12px; color:#808080;}
+.pd_buy .buy .left b{ float:right; font-weight:normal; color:#B3B3B3;}
+.pd_buy .buy .bt{ color:#fff; float:right; font-size:18px; line-height:37px; width:33%; text-align:center;}
+.pd_info{ background:#fff;border-top:1px solid #d4d4d4;border-bottom:1px solid #d4d4d4; padding:20px}
+.bd01{ background:url(../images/product/dot01.gif) repeat-x; width:100%; font-size:0px; line-height:0px; clear:both; height:1px; margin:20px 0px;}
+.pd_info dl{background-size:10px;}
+.pd_info dt{ color:#be764d; font-size:17px; line-height:26px;}
+.pd_info dd{ font-size:12px; line-height:22px; color:#808080; margin-top:5px;}
+.pd_info dd p{ text-align:center; margin-top:10px;}
+.pd_info dd p img{ width:85px; margin:0px 3px;}
+.pdh{ height:68px;}
+.pd_tb{ width:100%; background:#fbfbfb; line-height:28px; font-size:12px; color:#808080; margin-top:20px;}
+.pd_tb th{ background:#fbfbfb;}
+.pd_tb td{ background:#fff; text-align:center;}
+.mt24{ margin-top:24px;}
+.mt20{ margin-top:20px;}
+.center{ text-align:center;}
+.pic img{ width:100%;}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <title>为什么选择小财迷</title>
+    <script type="text/javascript" src="../../js/jquery-2.1.1.min.js"></script>
+
+    <link rel="stylesheet" href="../../css/why.css">
+</head>
+<body>
+<div class="stage " id="stage" style=" -webkit-transform: translateZ(0px);">
+    <div class="u-arrow">
+        <p class="css_sprite01"></p>
+    </div>
+
+    <div class="pages" id="pages">
+        <div class="page page-1" id="page-1">
+            <img src="../../images/why/01.png" height="100%" width="100%">
+            <div id="page-1-1" class="word"></div>
+        </div>
+        <div class="page page-2" id="page-2">
+            <img src="../../images/why/02.png" height="100%" width="100%">
+            <div id="page-2-1" class="word"></div>
+        </div>
+        <div class="page page-3" id="page-3">
+           <img src="../../images/why/03.png" height="100%" width="100%">
+            <div id="page-3-1" class="word"></div>
+        </div>
+
+    </div>
+</div>
+
+<script>
+    var s_width, s_height,p_height,total_height;
+    var page = 0;
+    var max = document.querySelectorAll('.page').length;
+
+    function Engin() {
+        var stage = document.getElementById('stage');
+        var sX, sY, s_cssText, cur_ty;
+        var pages = $('#pages');
+
+        var cur_ty = 0;
+        var s_cssText = '';
+        this.start = function () {
+            stage.addEventListener("touchstart",//"mousedown",
+                    this.begin, false); // 注册touch move事件处理方法为this.cut
+            stage.addEventListener("touchmove",//"mousemove",
+                    this.cut, false); // 注册touch move事件处理方法为this.cut
+            stage.addEventListener("touchend",//"mouseup",
+                    this.end, false); // 注册touch move事件处理方法为this.cut
+
+        }
+
+        this.begin = function (event) {
+           // alert("mousedown");
+            sY = event.changedTouches
+                    [0].pageY;//event.pageY
+           cur_ty = mod.getTranslateY(pages);
+           s_cssText = pages.css(mod.transform);
+
+        }
+
+        this.cut = function (event) {
+           // alert("mousemove");
+            event.preventDefault();
+            var delta = event.changedTouches
+                    [0].pageY - sY;//event.pageY
+            if (delta > 0 && page == 0 || delta < 0 && page == max)
+                return;
+          //  pages.css(mod.transform, 'translateY(' + (cur_ty + delta) + 'px)');
+        }
+        this.end = function (event) {
+            // alert("mouseup");
+            var y = event.changedTouches
+                    [0].pageY;//event.pageY
+            var delta = y - sY;
+            if (Math.abs(delta) < 5)
+                return;
+            if (Math.abs(delta) > 40) {
+                if (delta > 0 && page == 0 || delta < 0 && page == max)
+                    return;
+                if (delta > 0) {
+                    page--;
+                }
+                else {
+                    page++;
+                }
+                pages.addClass('moving');
+                if (page > 0) {
+                    if (page > max-1) {
+                        pages.css(mod.transform, 'translateY(0)');
+                        page=0;
+                        return;
+                    }
+                    var adjHeight = (p_height - s_height) * 0.5;
+                    adjHeight = Math.max(0, Math.min(30, adjHeight));
+                    pages.css(mod.transform, 'translateY(-' + (s_height + (page - 1) * p_height + adjHeight ) + 'px)');
+                }
+                else {
+                    pages.css(mod.transform, 'translateY(0)');
+                    page=0;
+                }
+             //   $('#page-' + page).addClass('on');
+                setTimeout(function () { pages.removeClass('moving'); }, 300);
+            }
+            else {
+                pages.addClass('moving');
+               // pages.css(mod.transform, s_cssText);
+                setTimeout(function () { pages.removeClass('moving'); }, 300);
+            }
+        }
+    }
+    $(document).ready(function () {
+        new Engin().start();
+        s_width = $(window).width();
+        s_height =p_height = $(window).height();
+        total_height=s_height*max;
+        $('#stage').height(s_height + 'px');
+        $('#stage').css("width",s_width + 'px');
+        $('#pages').css("width",s_width + 'px');
+        $('#pages').height(total_height + 'px');
+        $('.page').width(s_width + 'px').height(s_height + 'px');
+        $('.page').css("-webkit-background-size","100% "+s_height);
+        $('.trans_image_box').height(total_height + 'px');
+    });
+    var mod = {
+        transform: { 'webkitT': '-webkit-transform', 't': 'transform', 'MozT': '-moz-transform', 'msT': '-ms-transform', 'OT': '-o-transform'}[
+                function () {
+                    var dummyStyle = document.createElement('div').style;
+                    var vendors = 'webkitT,t,MozT,msT,OT'.split(','), t, i = 0, l = vendors.length; for (; i < l; i++) { t = vendors[i] + 'ransform'; if (t in dummyStyle) return vendors[i]; }
+                    return 't';
+                } ()],
+        getTranslateY: function (dom) { var ty = dom.css(mod.transform); ty = (ty.match(/-?\d+(\.\d*)?/g) || [0]).pop(); return parseInt(ty); },
+        onResize: function () { s_width = $(window).width(); s_height = $(window).height(); $('#stage').height(s_height + 'px'); $('.arr-down').hide(); setTimeout(function () { $('.arr-down').show(); }, 0); }, init: function () {
+            mod.bind(); mod.onResize(); $('#stage').css('-webkit-transform', 'translateZ(0)'); header.init({ maskOnNavShow: true, active: 0 });
+        }
+    };
+
+</script>
+</body>
+</html>
