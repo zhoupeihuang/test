@@ -1,0 +1,926 @@
+body,
+div,
+span,
+p,
+em,
+img,
+strong,
+b,
+small,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+sub,
+sup,
+tt,
+var,
+del,
+dfn,
+ins,
+kbd,
+q,
+s,
+samp,
+strike,
+applet,
+object,
+iframe,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+mark,
+audio,
+video,
+input,
+textarea,
+select {
+    margin: 0;
+    padding: 0;
+    font: 14px/1.5 "微软雅黑", arial,"Hiragino Sans GB";
+    font-family: "微软雅黑", arial,"Hiragino Sans GB";
+    -webkit-text-size-adjust: none;
+}
+ol,
+ul {
+    list-style: none;
+}
+html {
+    overflow-x: hidden;
+    -webkit-text-size-adjust: none;
+}
+a {
+    text-decoration: none;
+    outline: none;
+    color: @darkGrey;
+    cursor: default;
+}
+.cf:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.cf {
+    zoom: 1;
+}
+ ::selection {
+    background: #3498db !important;
+    color: #fff;
+}
+a:hover {
+    color: #3498db;
+    cursor: pointer;
+    text-decoration: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+sup,
+sub {
+    vertical-align: baseline;
+    font-size: 100%;
+}
+blockquote,
+q {
+    quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0; //  border-collapse:separate;
+    //  border-spacing:1px 1px;
+}
+div {
+    /*------------------------------------滚动条颜色 begin--------------------------------------*/
+    scrollbar-face-color: #44aaff;
+    scrollbar-arrow-color: #44aaff;
+    scrollbar-3dlight-color: #FFFFFF;
+    scrollbar-highlight-color: #FFFFFF;
+    scrollbar-shadow-color: #FFFFFF;
+    scrollbar-darkshadow-color: #FFFFFF;
+    scrollbar-track-color: #FFFFFF;
+}
+/*------------CHROME 滚动条--------------*/
+ ::-webkit-scrollbar {
+    width: 6px;
+}
+ ::-webkit-scrollbar-button {}
+ ::-webkit-scrollbar-track {
+    background-color: #44aaff;
+}
+ ::-webkit-scrollbar-track-piece {
+    background-color: #FFFFFF;
+    -webkit-border-radius: 4px;
+}
+ ::-webkit-scrollbar-thumb {
+    background-color: #44aaff;
+    border: solid 1px #44aaff;
+    border-radius: 4px;
+}
+ ::-webkit-scrollbar-corner {
+    background-color: #44aaff;
+}
+ ::-webkit-resizer {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: #44aaff;
+}
+/*------------------------------------滚动条颜色  end--------------------------------------*/
+/*定义主题色*/
+//定义主题色，以便一荣俱荣
+// @deongaree:#3390dd;
+// @blue:#4af;
+// @footerBlue:#1ba9e6;
+// @gray:#ff425b;
+// @LightGray:#a0a0a0;
+// @SuperLightGray:#434343;
+// @HGray:#fafafa;
+// @brown:#c5c1c9;
+// @pink:#ff5959;
+// @red:#ff425d;
+// @white:#ffffff;
+// @block:#000000;
+@darkGrey: #5e5d5a;
+@huise: #b3b3b3;
+@heise: #4d4d4d;
+@qianhui: #f0f0f0;
+@shenhui: #898989;
+@huangse: #fd5903;
+@gray: #ccc;
+.border {
+    border: 1px #efefef dashed;
+}
+.font10 {
+    font-size: 12px;
+}
+.font12 {
+    font-size: 12px;
+}
+.font13 {
+    font-size: 13px;
+}
+.font14 {
+    font-size: 14px;
+}
+.font15 {
+    font-size: 15px;
+}
+.font16 {
+    font-size: 16px;
+}
+.font18 {
+    font-size: 18px;
+}
+.font20 {
+    font-size: 20px;
+}
+.font22 {
+    font-size: 22px;
+}
+.font24 {
+    font-size: 24px;
+}
+.font26 {
+    font-size: 26px;
+}
+.font28 {
+    font-size: 28px;
+}
+.font30 {
+    font-size: 30px;
+}
+.fw {
+    color: #fff;
+}
+.f000 {
+    color: #000;
+}
+.f333 {
+    color: #333;
+}
+.f666 {
+    color: #666;
+}
+.f999 {
+    color: #999;
+}
+.whiteFont {}
+.whiteBg{
+    background-color: white !important;
+}
+.jingyong {
+    //不可以选状态
+    background-color: #ccc !important;
+    cursor: no-drop;
+}
+.noselect {
+    //选中后，去掉背景变蓝的
+    -moz-user-select: none;
+}
+.input_base(@width:210px) {
+    //按钮初始化
+    width: @width;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+    -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+    transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+.neibianju(@a:0px, @b:0px) {
+    //适用于表格需要内边距
+    border-collapse: separate;
+    border-spacing: @a,@b;
+}
+.borderRadius(@radius:5px) {
+    //圆角
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    border-radius: @radius;
+}
+.borderRadiusRight(@radius:5px) {
+    -webkit-border-bottom-right-radius: @radius;
+    -moz-border-bottom-right-radius: @radius;
+    border-bottom-right-radius: @radius;
+    -webkit-border-top-right-radius: @radius;
+    -moz-border-top-right-radius: @radius;
+    border-top-right-radius: @radius;
+}
+.touming(@opacity:0.94) {
+    //透明度
+    @opacity-ie: (@opacity * 100);
+    filter:~"alpha(opacity=@{opacity-ie})";
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    opacity: @opacity;
+}
+.boxShadow(@xN, @yN, @wN, @Color) {
+    //盒子阴影
+    -webkit-box-shadow: @xN @yN @wN @Color;
+    -moz-box-shadow: @xN @yN @wN @Color;
+    box-shadow: @xN @yN @wN @Color;
+}
+.border(@w:1px, @c:#ccc, @type:solid) {
+    //边线
+    border: @w @c @type;
+}
+.guodu(@times:0.4s) {
+    //过渡
+    transition: all @times ease-in-out;
+    -webkit-transition: all @times ease-in-out;
+}
+.guoduS {
+    //过渡
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+}
+.mohu {
+    //模糊
+    filter:url("blur.svg#blur");
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter:blur(5px);
+    filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+.butfShadow {
+    box-shadow: 0 0 10px rgba(44, 49, 54, 0.5);
+    -webkit-box-shadow: 0 0 10px rgba(44, 49, 54, 0.5);
+    -moz-box-shadow: 0 0 10px rgba(44, 49, 54, 0.5);
+}
+.clear {
+    clear: both;
+}
+.center {
+    margin: 0 auto !important;
+}
+.leftM {
+    float: left;
+    text-align: left;
+    min-width: 20%;
+}
+.rightM {
+    float: right;
+    text-align: right;
+    min-width: 20%;
+}
+.bs-example {
+    //BT默认盒子    
+    width: 90%;
+    background-color: #fff;
+    border-color: #ddd;
+    border-width: 0;
+    border-radius: 4px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    position: relative;
+    padding: 15px;
+    border-style: solid;
+    margin: 10px auto;
+}
+.fl {
+    display: inline;
+    float: left;
+}
+.fr {
+    display: inline;
+    float: right;
+}
+.cf:after {
+    content: "";
+    clear: both;
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.cf {
+    zoom: 1;
+}
+.pa3 {
+    padding: 3px;
+}
+.pa5 {
+    padding: 5px;
+}
+.pa10 {
+    padding: 10px;
+}
+.pa40 {
+    padding: 40px;
+}
+.pb10 {
+    padding-bottom: 10px;
+}
+.pb20 {
+    padding-bottom: 20px;
+}
+.mt10 {
+    margin-top: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mb10 {
+    margin-bottom: 10px;
+}
+.mb20 {
+    margin-bottom: 20px !important;
+}
+.mb30 {
+    margin-bottom: 30px !important;
+}
+.ml2 {
+    margin-left: 2px;
+}
+.ml3 {
+    margin-left: 3px;
+}
+.ml5 {
+    margin-left: 5px;
+}
+.ml8 {
+    margin-left: 8px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.pl20 {
+    padding-left: 20px;
+}
+.pl30 {
+    padding-left: 30px;
+}
+.jinyong {
+    background-color: #DCDCDC;
+    color: #C4BFBF;
+    cursor: not-allowed !important;
+}
+.none {
+    display: none;
+}
+.leftF {
+    text-align: left;
+}
+.rightF {
+    text-align: right;
+}
+.centerF {
+    text-align: center;
+}
+.rightF a {
+    float: right !important;
+}
+.imgAuto {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+.shengluehao {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+/*好看的底色与包裹*/
+.bgColor {
+    background-color: #EFF3F5;
+}
+.headerCont {
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+}
+.fixBox {
+    float: right;
+    width: 220px;
+    border-top: 1px solid #eff3f5;
+    border-bottom: 1px solid #eff3f5;
+    background-color: #fff;
+    height: 307px;
+    position: relative;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    overflow-x: hidden;
+    text-align: center;
+    overflow-y: hidden;
+}
+.fixBox2 {
+    float: right;
+    width: 220px;
+    height: 50px;
+    margin-top: 10px;
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+}
+.arrow-shadow {
+    position: absolute;
+    top: 15px;
+    left: -5px;
+    z-index: 3;
+    background-color: #fff;
+    width: 20px;
+    height: 20px;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+}
+.contentBox {
+    width: 1180px;
+    position: relative;
+    margin: 30px auto 0;
+}
+.Defaultbox {
+    padding: 20px;
+    border-top: 1px solid #eff3f5;
+    border-bottom: 1px solid #eff3f5;
+    width: 100%;
+    float: left;
+    min-height: 640px;
+}
+.hb {
+    height: 128px;
+    background-color: #fff;
+    padding: 20px;
+    width: 100%;
+    float: left;
+    position: relative;
+}
+.leftL {
+    background-color: #fff;
+    box-shadow: 0 0 3px rgba(0,0,0,.1);
+    border-top: 1px solid #eff3f5;
+    border-bottom: 1px solid #eff3f5;
+    width: 940px;
+    float: left;
+    min-height: 640px;
+}
+img {
+    border: 0;
+    vertical-align: middle;
+    width: inherit;
+    height: inherit;
+}
+p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.57142858;
+    color: #34495e;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/*-----------------------------万物生----我的借款--------------------------------------------*/
+.headerBox {
+    height: 44px;
+    box-shadow: 1px 1px 1px #dbdbdb;
+    .Styflex;
+    background-color: #fff;
+}
+.headerBan {
+    float: left;
+    flex: 1;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+}
+.headerBan a {
+    border-bottom-color: transparent;
+    border-bottom-width: 4px;
+    border-bottom-style: solid;
+    height: 40px;
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    font-size: 14px;
+    color: @huise;
+}
+.headerBanActive {
+    color: @heise !important;
+    border-bottom-color: @huangse !important;
+}
+.maxBox {
+    min-height: 1px;
+    background-color: @qianhui;
+}
+.contBox {
+    width: 100%;
+    min-height: 60px;
+    display: none;
+}
+.contentBoxs {
+    width: 94%;
+    margin: 0 3%;
+    min-height: 10px;
+    background-color: @qianhui;
+}
+/* 设置默认的 第一个 显示 出来*/
+ul.contentBoxs li:first-child {
+    display: block;
+}
+.cBox {
+    height: 60px;
+    background-color: white;
+    margin-top: 8px;
+    padding: 10px 11px 10px 19px;
+    -webkit-flex-wrap: wrap;
+}
+.cBox span {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    
+}
+.cBox span:nth-child(1) {
+    width: 71%;
+    font-size: 16px;
+    text-align: left;
+}
+.cBox span:nth-child(2) {
+    width: 26%;
+    font-size: 16px;
+    text-align: right;
+}
+.cBox span:nth-child(3) {
+    width: 71%;
+    font-size: 12px;
+    color: @huise;
+    text-align: left;
+}
+.cBox span:nth-child(4) {
+    width: 26%;
+    font-size: 12px;
+    color: @huise;
+    text-align: right;
+}
+.yelColor {
+    color: @huangse !important;
+}
+/*-----------商票贷----------*/
+.Styflex {
+    display: -webkit-box;
+    /* OLD - iOS 6-, Safari 3.1-6 */
+    display: -moz-box;
+    /* OLD - Firefox 19- (buggy but mostly works) */
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    display: -webkit-flex;
+    /* NEW - Chrome */
+    display: flex;
+    /* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+.mainsBox {
+    width: 100%;
+    min-height: 10px;
+    background-color: white;
+    border-bottom: 1px @gray solid;
+}
+.mBox {
+    width: 92%;
+    margin: 0 4%;
+}
+.amortizedLoan {
+    height: 65px;
+    width: 100%;
+}
+.amortLoadLeft {
+    text-align: left;
+    flex: 1;
+    color: @heise;
+}
+.amortLoadLeft p:first-child {
+    margin-top: 10px;
+    height: 20px;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 13px;
+}
+.amortLoadLeft p:last-child {
+    height: 32px;
+    line-height: 32px;
+    font-size: 20px;
+}
+.amortLoadRight {
+    flex: 1;
+    text-align: right;
+    line-height: 65px;
+    color: @huise;
+    font-size: 15px;
+}
+.amortLoadRight a {
+    color: @huise;
+    font-size: 15px;
+}
+.yjine {
+    color: @huangse !important;
+}
+.grayFont {
+    color: @huise !important;
+}
+.ybg {
+    background-color: @huangse !important;
+}
+.graybg {
+    background-color: @qianhui !important;
+}
+.loanInfo dt,
+.refundPlan dt {
+    background-color: @qianhui;
+    height: 38px;
+    border-bottom: 1px @gray solid;
+    line-height: 38px;
+    text-indent: 16px;
+    color: @shenhui;
+}
+.loanInfo dd {
+    background-color: white;
+    height: 45px;
+    border-bottom: 1px @gray solid;
+    line-height: 45px;
+    text-indent: 16px;
+    color: @shenhui;
+    .Styflex;
+}
+.loanInfo dd span {
+    line-height: 45px;
+    color: @heise;
+}
+.l1 {
+    text-align: left;
+    flex: 1;
+}
+.r1 {
+    text-align: right;
+    flex: 1;
+    padding-right: 16px;
+}
+.refundPlan dd {
+    background-color: white;
+    height: 60px;
+    border-bottom: 1px @gray solid;
+    text-indent: 16px;
+    color: @shenhui;
+    .Styflex;
+    -webkit-flex-wrap: wrap;
+    width: 100%;
+}
+.borderTop {
+    border-top: 1px @gray solid !important;
+}
+.borderBottom {
+    border-Bottom: 1px @gray solid !important;
+}
+.refundPlan dd ul{
+    width: 100%;
+}
+.refundPlan dd ul li {
+    color: @heise;
+    height: 30px;
+    float: left;
+}
+.l2 {
+    line-height: 38px;
+    text-align: left;
+    width: 50%;
+}
+.r2 {
+    line-height: 38px;
+    text-align: right;
+    width: 45%;
+    padding-right: 5%;
+}
+.l3 {
+    line-height: 20px;
+    width: 100%;
+    color: @huise !important;
+}
+.pagTitle {
+    position: relative;
+    height: 20px;
+    padding-left: 5px;
+    font-size: 14px;
+    margin-top: 0;
+    border-left: 1px @qianhui solid;
+    .Styflex;
+    margin-top: 37px;
+    margin-right: 34px;
+    color: @heise;
+}
+.bottomFix {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+.bottomBtn {
+    height: 45px;
+    width: 92%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: @huise;
+}
+.bottomAd {
+    height: 90px;
+    width: 92%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    background-color: @huise;
+}
+.bottomBtn a {
+    line-height: 45px;
+    font-size: 20px;
+    color: white;
+}
+.bottomAd a {
+    line-height: 90px;
+    font-size: 20px;
+    color: white;
+}
+/* 新浪支付 */
+.payState dt {
+    .Styflex;
+}
+.payState dt div {
+    height: 65px;
+    line-height: 65px;
+}
+.payState dt div:first-child button {
+    width: 50px;
+    height: 30px;
+    line-height: 30px;
+    background-color: @huangse;
+    color: white;
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
+}
+.payState dt div:nth-child(1) {
+    flex: 1;
+    text-align: center;
+}
+.payState dt div:nth-child(2) {
+    flex: 3;
+    font-size: 14px;
+    position: relative;
+    text-indent: 10px;
+}
+.payState dt div:nth-child(3) {
+    flex: 2;
+    text-align: right;
+}
+.fixLittleBox {
+    position: absolute;
+    top: 6px;
+    left: 1px;
+    color: @shenhui;
+    font-size: 12px;
+}
+.payState dd {
+    .Styflex;
+    height: 65px;
+    line-height: 65px;
+}
+.payState dd span {
+    height: 60px;
+    margin-top: 5px;
+}
+.payState dd span:nth-child(1) {
+    flex: 1;
+}
+.yuan {
+    margin: 0 auto;
+    border: 1px @huangse solid;
+    width: 25px;
+    height: 25px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 60px;
+    margin-top: 13px;
+    background-color: transparent;
+}
+.payState dd span:nth-child(2) {
+    flex: 5;
+}
+.payState dd span p {
+    height: 16px;
+    text-indent: 10px;
+}
+.dnowBG{
+    background-image: url(../img/downloadNowBG.png);
+     
+}

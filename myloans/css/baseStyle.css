@@ -1,0 +1,1445 @@
+body,
+div,
+span,
+p,
+em,
+img,
+strong,
+b,
+small,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+sub,
+sup,
+tt,
+var,
+del,
+dfn,
+ins,
+kbd,
+q,
+s,
+samp,
+strike,
+applet,
+object,
+iframe,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+mark,
+audio,
+video,
+input,
+textarea,
+select {
+	margin: 0;
+	padding: 0;
+	font: 14px/1.5 "微软雅黑", arial, "Hiragino Sans GB";
+	font-family: "微软雅黑", arial, "Hiragino Sans GB";
+	-webkit-text-size-adjust: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+html {
+	overflow-x: hidden;
+	-webkit-text-size-adjust: none;
+}
+
+a {
+	text-decoration: none;
+	outline: none;
+	color: #5e5d5a;
+	cursor: default;
+}
+
+.cf:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.cf {
+	zoom: 1;
+}
+
+::selection {
+	background: #3498db !important;
+	color: #fff;
+}
+
+a:hover {
+	color: #3498db;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+sup,
+sub {
+	vertical-align: baseline;
+	font-size: 100%;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+div {
+	/*------------------------------------滚动条颜色 begin--------------------------------------*/
+	scrollbar-face-color: #44aaff;
+	scrollbar-arrow-color: #44aaff;
+	scrollbar-3dlight-color: #FFFFFF;
+	scrollbar-highlight-color: #FFFFFF;
+	scrollbar-shadow-color: #FFFFFF;
+	scrollbar-darkshadow-color: #FFFFFF;
+	scrollbar-track-color: #FFFFFF;
+}
+
+
+/*------------CHROME 滚动条--------------*/
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #44aaff;
+}
+
+::-webkit-scrollbar-track-piece {
+	background-color: #FFFFFF;
+	-webkit-border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #44aaff;
+	border: solid 1px #44aaff;
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-corner {
+	background-color: #44aaff;
+}
+
+::-webkit-resizer {
+	background-repeat: no-repeat;
+	background-position: bottom right;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #44aaff;
+}
+
+
+/*------------------------------------滚动条颜色  end--------------------------------------*/
+
+
+/*定义主题色*/
+
+.border {
+	border: 1px #efefef dashed;
+}
+
+.font10 {
+	font-size: 12px;
+}
+
+.font12 {
+	font-size: 12px;
+}
+
+.font13 {
+	font-size: 13px;
+}
+
+.font14 {
+	font-size: 14px;
+}
+
+.font15 {
+	font-size: 15px;
+}
+
+.font16 {
+	font-size: 16px;
+}
+
+.font18 {
+	font-size: 18px;
+}
+
+.font20 {
+	font-size: 20px;
+}
+
+.font22 {
+	font-size: 22px;
+}
+
+.font24 {
+	font-size: 24px;
+}
+
+.font26 {
+	font-size: 26px;
+}
+
+.font28 {
+	font-size: 28px;
+}
+
+.font30 {
+	font-size: 30px;
+}
+
+.fw {
+	color: #fff;
+}
+
+.f000 {
+	color: #000;
+}
+
+.f333 {
+	color: #333;
+}
+
+.f666 {
+	color: #666;
+}
+
+.f999 {
+	color: #999;
+}
+.jiachu{
+	font-weight: bold;
+}
+.whiteBg {
+	background-color: white !important;
+}
+
+.blackBg {
+	background-color: black !important;
+}
+
+.black80Bg {
+	background-image: url(../images/everydaySignIn/80blackbg.png) !important;
+	background-repeat: repeat !important;
+	/*background-color: rgba(0,0,0,.8) !important;*/
+}
+
+.pinkBg {
+	background-color: #ffbc9b !important;
+}
+
+.jingyong {
+	background-color: #ccc !important;
+	cursor: no-drop;
+}
+
+.noselect {
+	-moz-user-select: none;
+}
+
+.guoduS {
+	transition: all 0.4s ease-in-out;
+	-webkit-transition: all 0.4s ease-in-out;
+}
+
+.mohu {
+	filter: url("blur.svg#blur");
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=5, MakeShadow=false);
+}
+
+.butfShadow {
+	box-shadow: 0 0 10px rgba(44, 49, 54, 0.5);
+	-webkit-box-shadow: 0 0 10px rgba(44, 49, 54, 0.5);
+	-moz-box-shadow: 0 0 10px rgba(44, 49, 54, 0.5);
+}
+
+.clear {
+	clear: both;
+}
+
+.center {
+	margin: 0 auto !important;
+}
+
+.leftM {
+	float: left;
+	text-align: left;
+	min-width: 20%;
+}
+
+.rightM {
+	float: right;
+	text-align: right;
+	min-width: 20%;
+}
+
+.bs-example {
+	width: 90%;
+	background-color: #fff;
+	border-color: #ddd;
+	border-width: 0;
+	border-radius: 4px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	position: relative;
+	padding: 15px;
+	border-style: solid;
+	margin: 10px auto;
+}
+
+.fl {
+	display: inline;
+	float: left;
+}
+
+.fr {
+	display: inline;
+	float: right;
+}
+
+.cf:after {
+	content: "";
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+}
+
+.cf {
+	zoom: 1;
+}
+
+.pa3 {
+	padding: 3px;
+}
+
+.pa5 {
+	padding: 5px;
+}
+
+.pa10 {
+	padding: 10px;
+}
+
+.pa40 {
+	padding: 40px;
+}
+
+.pb10 {
+	padding-bottom: 10px;
+}
+
+.pb20 {
+	padding-bottom: 20px;
+}
+
+.mt10 {
+	margin-top: 10px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.mt30 {
+	margin-top: 30px;
+}
+
+.mb10 {
+	margin-bottom: 10px;
+}
+
+.mb20 {
+	margin-bottom: 20px !important;
+}
+
+.mb30 {
+	margin-bottom: 30px !important;
+}
+
+.ml2 {
+	margin-left: 2px;
+}
+
+.ml3 {
+	margin-left: 3px;
+}
+
+.ml5 {
+	margin-left: 5px;
+}
+
+.ml8 {
+	margin-left: 8px;
+}
+
+.ml10 {
+	margin-left: 10px;
+}
+
+.pl20 {
+	padding-left: 20px;
+}
+
+.pl30 {
+	padding-left: 30px;
+}
+
+.jinyong {
+	background-color: #DCDCDC;
+	color: #C4BFBF;
+	cursor: not-allowed !important;
+}
+
+.none {
+	display: none;
+}
+
+.leftF {
+	text-align: left;
+}
+
+.rightF {
+	text-align: right;
+}
+
+.centerF {
+	text-align: center;
+}
+
+.rightF a {
+	float: right !important;
+}
+
+.imgAuto {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	text-align: center;
+}
+
+.shengluehao {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.disAndW100{
+    width: 97%;
+    display: inline-block !important;
+}
+
+/*好看的底色与包裹*/
+
+.bgColor {
+	background-color: #EFF3F5;
+}
+
+.headerCont {
+	height: 70px;
+	width: 100%;
+	background-color: #fff;
+}
+
+.fixBox {
+	float: right;
+	width: 220px;
+	border-top: 1px solid #eff3f5;
+	border-bottom: 1px solid #eff3f5;
+	background-color: #fff;
+	height: 307px;
+	position: relative;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	overflow-x: hidden;
+	text-align: center;
+	overflow-y: hidden;
+}
+
+.fixBox2 {
+	float: right;
+	width: 220px;
+	height: 50px;
+	margin-top: 10px;
+	position: relative;
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-shadow {
+	position: absolute;
+	top: 15px;
+	left: -5px;
+	z-index: 3;
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+}
+
+.contentBox {
+	width: 1180px;
+	position: relative;
+	margin: 30px auto 0;
+}
+
+.Defaultbox {
+	padding: 20px;
+	border-top: 1px solid #eff3f5;
+	border-bottom: 1px solid #eff3f5;
+	width: 100%;
+	float: left;
+	min-height: 640px;
+}
+
+.hb {
+	height: 128px;
+	background-color: #fff;
+	padding: 20px;
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+.leftL {
+	background-color: #fff;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+	border-top: 1px solid #eff3f5;
+	border-bottom: 1px solid #eff3f5;
+	width: 940px;
+	float: left;
+	min-height: 640px;
+}
+
+img {
+	border: 0;
+	vertical-align: middle;
+	width: inherit;
+	height: inherit;
+}
+
+p {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.57142858;
+	color: #34495e;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+
+/*-----------------------------万物生----我的借款--------------------------------------------*/
+
+.headerBox {
+	height: 44px;
+	box-shadow: 1px 1px 1px #dbdbdb;
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	background-color: #fff;
+}
+
+.headerBan {
+	float: left;
+	flex: 1;
+	height: 44px;
+	line-height: 44px;
+	text-align: center;
+}
+
+.headerBan a {
+	border-bottom-color: transparent;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	height: 40px;
+	width: 100%;
+	display: block;
+	line-height: 40px;
+	font-size: 14px;
+	color: #b3b3b3;
+}
+
+.headerBanActive {
+	color: #4d4d4d !important;
+	border-bottom-color: #fd5903 !important;
+}
+
+.maxBox {
+	min-height: 1px;
+	background-color: #f0f0f0;
+}
+.toumingBG{
+	background-color: transparent !important;
+}
+.contBox {
+	width: 100%;
+	min-height: 60px;
+	display: none;
+}
+
+.contentBoxs {
+	width: 94%;
+	margin: 0 3%;
+	min-height: 10px;
+	background-color: #f0f0f0;
+}
+
+
+/* 设置默认的 第一个 显示 出来*/
+
+ul.contentBoxs li:first-child {
+	display: block;
+}
+
+.cBox {
+	height: 60px;
+	background-color: white;
+	margin-top: 8px;
+	padding: 10px 11px 10px 19px;
+	-webkit-flex-wrap: wrap;
+}
+
+.cBox span {
+	height: 30px;
+	line-height: 30px;
+	display: inline-block;
+}
+
+.cBox span:nth-child(1) {
+	width: 71%;
+	font-size: 16px;
+	text-align: left;
+}
+
+.cBox span:nth-child(2) {
+	width: 26%;
+	font-size: 16px;
+	text-align: right;
+}
+
+.cBox span:nth-child(3) {
+	width: 71%;
+	font-size: 12px;
+	color: #b3b3b3;
+	text-align: left;
+}
+
+.cBox span:nth-child(4) {
+	width: 26%;
+	font-size: 12px;
+	color: #b3b3b3;
+	text-align: right;
+}
+
+.yelColor {
+	color: #fd5903 !important;
+}
+
+
+/*-----------商票贷----------*/
+
+.Styflex {
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.mainsBox {
+	width: 100%;
+	min-height: 10px;
+	background-color: white;
+	border-bottom: 1px #ccc solid;
+}
+
+.mBox {
+	width: 92%;
+	margin: 0 4%;
+}
+
+.amortizedLoan {
+	height: 65px;
+	width: 100%;
+}
+
+.amortLoadLeft {
+	text-align: left;
+	flex: 1;
+	color: #4d4d4d;
+}
+
+.amortLoadLeft p:first-child {
+	margin-top: 10px;
+	height: 20px;
+	display: inline-block;
+	line-height: 20px;
+	font-size: 13px;
+}
+
+.amortLoadLeft p:last-child {
+	height: 32px;
+	line-height: 32px;
+	font-size: 20px;
+}
+
+.amortLoadRight {
+	flex: 1;
+	text-align: right;
+	line-height: 65px;
+	color: #b3b3b3;
+	font-size: 15px;
+}
+
+.amortLoadRight a {
+	color: #b3b3b3;
+	font-size: 15px;
+}
+
+.yjine {
+	color: #fd5903 !important;
+}
+.blackFont{
+	color: #4d4d4d !important;
+}
+.grayFont {
+	color: #b3b3b3 !important;
+}
+
+.ybg {
+	background-color: #fd5903 !important;
+}
+
+.graybg {
+	background-color: #f0f0f0 !important;
+}
+
+.loanInfo dt,
+.refundPlan dt {
+	background-color: #f0f0f0;
+	height: 38px;
+	border-bottom: 1px #ccc solid;
+	line-height: 38px;
+	text-indent: 16px;
+	color: #898989;
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.loanInfo dt span {
+	line-height: 38px;
+}
+
+.loanInfo dd {
+	background-color: white;
+	height: 45px;
+	border-bottom: 1px #ccc solid;
+	line-height: 45px;
+	text-indent: 16px;
+	color: #898989;
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.loanInfo dd span {
+	line-height: 45px;
+	color: #4d4d4d;
+}
+
+.l1 {
+	text-align: left;
+	flex: 1;
+}
+ 
+.r1 {
+	text-align: right;
+	flex: 1;
+	padding-right: 16px;
+}
+
+.refundPlan dd {
+	background-color: white;
+	height: 60px;
+	border-bottom: 1px #ccc solid;
+	text-indent: 16px;
+	color: #898989;
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	-webkit-flex-wrap: wrap;
+	width: 100%;
+}
+
+.borderTop {
+	border-top: 1px #ccc solid !important;
+}
+
+.borderBottom {
+	border-bottom: 1px #ccc solid !important;
+}
+
+.borderBottomNone {
+	border-bottom: 1px transparent solid !important;
+}
+
+.refundPlan dd ul {
+	width: 100%;
+}
+
+.refundPlan dd ul li {
+	color: #4d4d4d;
+	height: 30px;
+	float: left;
+}
+
+.l2 {
+	line-height: 38px;
+	text-align: left;
+	width: 50%;
+}
+
+.r2 {
+	line-height: 38px;
+	text-align: right;
+	width: 45%;
+	padding-right: 5%;
+}
+
+.l3 {
+	line-height: 20px;
+	width: 100%;
+	color: #b3b3b3 !important;
+}
+
+.pagTitle {
+	position: relative;
+	height: 20px;
+	padding-left: 5px;
+	font-size: 14px;
+	margin-top: 0;
+	border-left: 1px #f0f0f0 solid;
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	margin-top: 37px;
+	margin-right: 34px;
+	color: #4d4d4d;
+}
+
+.bottomFix {
+	position: fixed;
+	bottom: 10px;
+	width: 100%;
+}
+
+.bottomBtn {
+	height: 45px;
+	width: 92%;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #b3b3b3;
+}
+
+.bottomAd {
+	height: 90px;
+	width: 92%;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #b3b3b3;
+}
+
+.bottomBtn a {
+	line-height: 45px;
+	font-size: 20px;
+	color: white;
+}
+
+.bottomAd a {
+	line-height: 90px;
+	font-size: 20px;
+	color: white;
+}
+
+
+/* 新浪支付 */
+
+.payState dt {
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+}
+
+.payState dt div {
+	height: 65px;
+	line-height: 65px;
+}
+
+.payState dt div:first-child button {
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	background-color: #fd5903;
+	color: white;
+	border: none;
+	font-size: 12px;
+	border-radius: 4px;
+}
+
+.payState dt div:nth-child(1) {
+	flex: 1;
+	text-align: center;
+}
+
+.payState dt div:nth-child(2) {
+	flex: 3;
+	font-size: 14px;
+	position: relative;
+	text-indent: 10px;
+}
+
+.payState dt div:nth-child(3) {
+	flex: 2;
+	text-align: right;
+}
+
+.fixLittleBox {
+	position: absolute;
+	top: 6px;
+	left: 1px;
+	color: #898989;
+	font-size: 12px;
+}
+
+.payState dd {
+	display: -webkit-box;
+	/* OLD - iOS 6-, Safari 3.1-6 */
+	display: -moz-box;
+	/* OLD - Firefox 19- (buggy but mostly works) */
+	display: -ms-flexbox;
+	/* TWEENER - IE 10 */
+	display: -webkit-flex;
+	/* NEW - Chrome */
+	display: flex;
+	/* NEW, Spec - Opera 12.1, Firefox 20+ */
+	height: 65px;
+	line-height: 65px;
+}
+
+.payState dd span {
+	height: 60px;
+	margin-top: 5px;
+}
+
+.payState dd span:nth-child(1) {
+	flex: 1;
+}
+
+.yuan {
+	margin: 0 auto;
+	border: 1px #fd5903 solid;
+	width: 25px;
+	height: 25px;
+	line-height: 20px;
+	text-align: center;
+	border-radius: 60px;
+	margin-top: 13px;
+	background-color: transparent;
+}
+
+.payState dd span:nth-child(2) {
+	flex: 5;
+}
+
+.payState dd span p {
+	height: 16px;
+	text-indent: 10px;
+}
+
+.dnowBG {
+	background-image: url(../images/downloadnow/downloadNowBG1.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100%;
+	width: 100%;
+}
+
+.bottomFix2 {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+}
+
+.bottomBtn2 {
+	height: 45px;
+	width: 76%;
+	position: relative;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #b3b3b3;
+}
+
+.bottomBtn2 a {
+	line-height: 45px;
+	font-size: 20px;
+	color: white;
+}
+
+.ml8 {
+	margin-left: 8px;
+}
+
+.sipMainBg {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 375px;
+	text-align: center;
+	font-size: 30px;
+	font-size: 1.875rem;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	color: white;
+	height: 500px;
+	/*border: 1px red solid;*/
+	background-image: url(../images/everydaySignIn/signInBg1.png);
+	background-position: left top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.minh100 {
+	min-height: 100% !important;
+}
+
+.redPacks {
+	position: relative;
+	margin: 0 auto;
+	/*border: 1px red solid;*/
+	width: 56%;
+	text-align: center;
+	height: 30px;
+}
+
+.redPackTitle {
+	margin-top: 100px;
+	color: #e72d00;
+	font-size: 14px;
+	line-height: 23px;
+}
+
+.redPackJine {
+	margin-top: 4px;
+	color: #e72d00;
+	font-size: 29px;
+	line-height: 20px;
+	text-shadow: 3px 1px 5px #a09999;
+}
+
+.redPackHi {
+	margin-top: 0px;
+	color: #e72d00;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+.redPackText {
+	margin-top: 66px;
+	color: #fbda30;
+	font-size: 18px;
+	line-height: 40px;
+}
+
+.redPackBtn {
+	margin-top: 38px;
+	line-height: 46px;
+	height: 42px;
+}
+
+.redPackBtn a {
+	color: #e72d00;
+	font-size: 18px;
+	height: 42px;
+	width: 78%;
+	display: inline-block;
+}
+
+.closeBan {
+	width: 28px;
+	height: 28px;
+	right: 49px;
+	top: 88px;
+	position: absolute;
+	/*background-color: rgba(0,0,0,.5);*/
+}
+
+.closeBan a {
+	display: inline-block;
+	width: 28px;
+	height: 28px;
+}
+
+
+/*签到 记录*/
+
+.signRedBox {
+	background-image: url(../images/everydaySignIn/pinkDate.png);
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	min-height: 100%;
+	width: 100%;
+}
+
+.signDateBox {
+	position: fixed;
+	width: 100%;
+	bottom: 0px;
+	height: 290px;
+	background-color: white;
+}
+
+.signDateBox:before {
+	content: " ";
+	background-image: url(../images/everydaySignIn/huabian.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-size: 100% auto;
+	margin-top: -20px;
+	height: 10px;
+	width: 100%;
+	/* background-color: blue; */
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.sirt {
+	position: relative;
+	margin: 0 auto;
+	width: 70%;
+	height: 30px;
+}
+
+.sirDays {
+	color: white;
+	font-size: 18px;
+	margin-top: 120px;
+}
+.sirJine{
+	color: white;
+	font-size: 18px;
+	margin-top: 7px;
+}
+.sirRecText{
+	color: #754c24;
+	font-size: 18px;
+	margin-top: 7px;
+}
+.sirRecText a{
+	color: #754c24;
+	font-size: 18px;
+}
+.signRedBgs{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	bottom: auto;
+	right: auto;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	-o-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 375px;
+	text-align: center;
+	font-size: 30px;
+	font-size: 1.875rem;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+	color: white;
+	height: 500px;
+	/*border: 1px red solid;*/
+	background-image: url(../images/everydaySignIn/pinkDate.png);
+	background-position: top;
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+/*-------------------------推荐有礼---------------------*/
+.dateS{
+	color: #898989;
+    line-height: 22px;
+    height: 23px;
+}
+.moblieS{
+    line-height: 33px;
+    height: 23px;
+}
+.maxJBBG{
+	background-image: url(../images/recommendGift/1gL4sZBG.jpg);
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-size: 100% auto;
+}
+.bigPicBg{
+	min-height:320px;
+	width: 100%;
+	background-image: url(../images/recommendGift/1gL4sZ.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 0 auto;
+	border-bottom: 1px #ffac00 solid;
+}
+.recomBanBox , .recomSuccessBox ,.recomCronyBox {
+	margin: 0 auto;
+	position: relative;
+}
+.recomBanBox{
+	width: 70%;
+	height: 150px;
+	text-align: center;
+}
+.recomBanBox p{
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+}
+.recomBanBox .recomBtn{
+	width: 100%;
+	height: 45px;
+	line-height: 45px;
+	background-color: #FC5903;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	border: none;
+	display: block;
+}
+.recomSuccessBox,.recomCronyBox{
+	width: 96%;
+	background-color: #ffcf55;
+	min-height: 120px;
+	text-align: center;
+	margin-bottom: 30px;
+    padding-bottom: 1px;
+}
+.recomSuccessBox .recomSucBl dt,.recomCronyBox dt{
+	width: 100%;
+	height: 55px;
+	line-height: 55px;
+	color: white;
+	font-size: 18px;
+	background-image: url(../images/recommendGift/line2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+.recomSuccessBox .recomSucBl dd,.recomCronyBox .recomCronyBl dd{
+	width: 94%;
+	height: 86px;
+	position: relative;
+	margin: 0 auto;
+	color: #808080;
+	font-size: 14px;
+	background-color:white ;
+	background-image: url(../images/recommendGift/infoBox2.png);
+	background-position: left top;
+	background-repeat: repeat-x;
+	background-size: 100% auto;
+	margin-bottom: 15px;
+}
+ 
+
+.recomTag{
+	width: 96%;
+	height: 46px;
+	border-collapse: separate;
+ 	border-spacing: 0px;
+	text-align: right;
+    position: relative;
+    margin: 0 auto;
+    top: 20px;
+    border: none;
+}
+.recomTag td{
+	border: none;
+	line-height: 23px;
+	font-size: 12px;
+}
+.recomTagJIN{
+    vertical-align: bottom;
+    line-height: 39px !important;
+    text-align: left;
+    font-size: 32px !important;
+    font-weight: 800;
+    color: #fd5903 !important;
+    text-indent: 2px;
+}
+.ruleBox{
+	background-color: #fbf4d7;
+	width: 100%;
+	min-height: 30px;
+}
+.ruleDl{
+	margin: 0 auto;
+	position: relative;
+	width: 88%;
+	min-height: 30px;
+	color: #808080;
+	padding-top: 20px;
+	padding-bottom: 15px;
+}
+.ruleDl dt{
+	color: #fd5903 !important;
+	font-size: 16px;
+}
+.ruleDl dd{
+	margin-bottom: 15px;
+}

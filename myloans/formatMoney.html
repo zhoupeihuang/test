@@ -1,0 +1,36 @@
+<html>
+
+	<head>
+		<script type="text/javascript" src="js/jquery.js" ></script>
+		<script type="text/javascript" src="js/formatMoney.js" ></script>
+		<script type="text/javascript">
+			$(function() {
+				//格式化金额
+				$(".jine").formatMoney({
+					n: 2,
+					h: "元"
+				})
+			})
+		</script>
+		 
+	</head>
+
+	<body>
+		<div class="jine">
+			2000
+		</div><br />
+		<div class="jine">
+			3000
+		</div><br />
+		<div class="jine">
+			4000
+		</div><br />
+		<div class="jine">
+			5000
+		</div><br />
+		<div class="jine">
+			6000
+		</div>
+	</body>
+
+</html>

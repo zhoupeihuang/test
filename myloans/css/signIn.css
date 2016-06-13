@@ -1,0 +1,116 @@
+.singer_r_img {
+	display: block;
+	width: 114px;
+	height: 52px;
+	line-height: 45px;
+	background: url(images/sing_week.gif) right 2px no-repeat;
+	vertical-align: middle;
+	*margin-bottom: -10px;
+	text-decoration: none;
+}
+
+.singer_r_img:hover {
+	background-position: right -53px;
+	text-decoration: none;
+}
+
+.singer_r_img span {
+	margin-left: 14px;
+	font-size: 16px;
+	font-family: 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif !important;
+	font-weight: 700;
+	color: #165379;
+}
+
+.singer_r_img.current {
+	background: url(images/sing_sing.gif) no-repeat 0 2px;
+	border: 0;
+	text-decoration: none;
+}
+
+.sign table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	font-family: "微软雅黑",arial;
+}
+
+.sign th{
+	width: 30px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    /* border: 1px solid #cdcdcd; */
+    border-bottom: 1px solid #cdcdcd;
+    border-top: 1px solid #cdcdcd;
+}
+.sign td {
+	width: 30px;
+	height: 36px;
+	text-align: center;
+	line-height: 36px;
+	border: 1px solid #cdcdcd;
+	color: #4D4D4D;
+	vertical-align: middle;
+}
+
+.sign th {
+	font-size: 16px;
+	color: #808080;
+}
+
+.sign tr td:first-child{
+	border-left: 1px transparent solid;
+}
+.sign tr td:last-child {
+	border-right: 1px transparent solid;
+}
+
+.sign .on {
+    background-color: #fc5903;
+    color: #fff;
+    background-image: url(../images/everydaySignIn/rightPic.png);
+    background-position: 51% 86%;
+    background-size: 13px 10px;
+    background-repeat: no-repeat;
+    line-height: 30px;
+    vertical-align: text-top;
+}
+
+.calendar_month_next,
+.calendar_month_prev {
+	width: 34px;
+	height: 40px;
+	cursor: pointer;
+	background: url(../images/everydaySignIn/sign_arrow.png) no-repeat;
+}
+
+.calendar_month_next {
+	float: right;
+    background-position: -34px -4px
+}
+
+.calendar_month_span {
+	display: inline;
+	line-height: 40px;
+	font-size: 16px;
+	color: #4D4D4D;
+	letter-spacing: 2px;
+	/*font-weight: bold;*/
+}
+
+.calendar_month_prev {
+	float: left;
+	background-position: 7px -4px;
+}
+
+.sign_succ_calendar_title {
+	text-align: center;
+	width: 100%;
+	background: #fff;
+}
+
+.sign_main {
+	width: 100%;
+	font-family: "Microsoft YaHei", SimHei;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<!--<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />-->
+		<title></title>
+		<link rel="stylesheet/less" type="text/css" href="css/baseStyle.less" />
+		<!--<link rel="stylesheet/css" type="text/css" href="css/baseStyle.css" />-->
+		<script src="//cdn.bootcss.com/jquery/2.1.3/jquery.js"></script>
+		<script type="text/javascript" src="js/less.js"></script>
+		<style type="text/css">
+			.maxBgPic {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				overflow: hidden;
+				z-index: -1;
+			}
+			
+			.bgpic {
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				color: transparent;
+				background-size: cover;
+				background-position: 50% 50%;
+				background-repeat: none;
+				opacity: 0.8;
+				z-index: 0;
+				-webkit-backface-visibility: hidden;
+				-webkit-animation: imageAnimation 36s linear infinite 0s;
+				-moz-animation: imageAnimation 36s linear infinite 0s;
+				-o-animation: imageAnimation 36s linear infinite 0s;
+				-ms-animation: imageAnimation 36s linear infinite 0s;
+				animation: imageAnimation 36s linear infinite 0s;
+				background-image: url(img/1V4o5xqtgr_src.jpg);
+			}
+			
+			.aest {
+				margin: 0 auto;
+				position: relative;
+				width: 300px;
+				height: 300px;
+				border: 1px red solid;
+			}
+		</style>
+		<script>
+			$(window).resize(function() {
+				//process here
+				console.log($(window).height());
+			});
+		</script>
+	</head>
+
+	<body>
+		<div class="maxBgPic">
+			<span class="bgpic"></span>
+			<div class="aest">
+				我所有要用的
+			</div>
+		</div>
+	</body>
+
+</html>

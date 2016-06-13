@@ -1,0 +1,72 @@
+<!doctype html> 2
+<html lang="en">
+	3
+
+	<head>
+		4
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"> 5
+		<meta charset="UTF-8"> 6
+		<title>0.5 border</title>
+		7
+		<style type="text/css">
+			8 * {
+				margin: 0;
+				padding: 0;
+				-webkit-box-sizing: border-box;
+			}
+			
+			9 ul {
+				10 position: relative;
+				11
+			}
+			
+			12 li {
+				13 height: 60px;
+				14 line-height: 60px;
+				15 padding-left: 10px;
+				16 position: relative;
+				17 font-size: 20px;
+				18
+			}
+			
+			19 li:after {
+				20 content: "";
+				21 display: block;
+				22 position: absolute;
+				23 left: -50%;
+				24 width: 200%;
+				25 height: 1px;
+				26 background: #ededed;
+				27 -webkit-transform: scale(0.5);
+				28
+			}
+			
+			29
+		</style>
+		30 </head>
+	31
+
+	<body>
+		32
+		<ul>
+			33
+			<li>list-item1</li>
+			34
+			<li>list-item2</li>
+			35
+			<li>list-item3</li>
+			36
+			<li>list-item4</li>
+			37
+			<li>list-item5</li>
+			38
+			<li>list-item6</li>
+			39
+			<li>list-item7</li>
+			40
+			<li>list-item8</li>
+			41 </ul>
+		42 </body>
+	43
+
+</html>
